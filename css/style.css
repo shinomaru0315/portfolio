@@ -1,11 +1,11 @@
 @import './reset.css';
 
-.logo-title{ 
+#header{
+  height: 480px;
+
   background-image: url(../img/free-header.jpg);
-  background-size: 100vw;
-  height: 100%;
+  background-position: center center;
   position: relative;
-  
   vertical-align: center;
 }
 
@@ -16,7 +16,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-65%);
 }
 
 .menu-ber{
@@ -78,6 +78,15 @@ a.nav-list:hover{
   border-radius: 50%;
 }
 
+.card-wrap{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.card{
+  background-color: white;
+  height: 200px;
+}
 
 footer{
   background-color: rgb(31, 31, 31);
