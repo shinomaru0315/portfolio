@@ -1,8 +1,5 @@
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
@@ -20,25 +17,25 @@
       <ul class= "menu-lists">
         <li class= "menu-list">
           <i class="fas fa-user"></i>
-          <a class= "nav-list nav-profile">PROFILE</a>
+          <a href= "#profile" class= "nav-list nav-profile">PROFILE</a>
         </li>
         <li class= "menu-list">
           <i class="fas fa-star"></i>
-          <a class= "nav-list nav-skill">SKILL</a>
+          <a href= "#skill" class= "nav-list nav-skill">SKILL</a>
         </li>
         <li class= "menu-list">
           <i class="fas fa-list-ul"></i>
-          <a class= "nav-list nav-works">WORKS</a>
+          <a href= "#works" class= "nav-list nav-works">WORKS</a>
         </li>
         <li class= "menu-list">
           <i class="fas fa-envelope"></i>
-          <a class= "nav-list nav-contact">CONTACT</a>
+          <a href= "#contact" class= "nav-list nav-contact">CONTACT</a>
         </li>
       </ul>
     </nav>
     <div class= "contents">
 
-      <div class= "container">
+      <div class= "container" id= "profile">
         <div class= "content-title">
           <i class="fas fa-user"></i>
           PROFILE
@@ -56,42 +53,159 @@
             </span>
           </div>
         </div>
+      </div>
 
-        <div class= "container">
-          <div class= "content-title" style="padding-top: 32px;">
-            <i class="fas fa-star"></i>
-            SKILL
+      <div class= "container" id= "skill">
+        <div class= "content-title" style="padding-top: 32px;">
+          <i class="fas fa-star"></i>
+          SKILL
+        </div>
+        <div class= "card-wrap">
+          <div class= "card">
+            <div class= "card-heading">
+              <i class= "fas fa-desktop"></i>
+              <span>フロントエンド</span>
+            </div>
+            <p class= "card-text">html cssは好きで書いてます。JSも練習してます。</p>
+            <div>
+              <p class= "card-title card-body">学習した技術</p>
+              <p class= "card-body">HTML5</p>
+              <p class= "card-body">CSS3</p>
+              <p class= "card-body">javascript</p>
+              <p class= "card-body">jQuery</p>
+            </div>
           </div>
-          <div class= "card-wrap">
-            <div class= "card">
 
+          <div class= "card">
+            <div class= "card-heading">
+              <i class= "fas fa-desktop"></i>
+              <span>バックエンド</span>
+            </div>
+            <p class= "card-text">主にrubyを使用してます。</p>
+            <div>
+              <p class= "card-title card-body">学習した技術</p>
+              <p class= "card-body">ruby</p>
+              <p class= "card-body">ruby on rails</p>
+            </div>
+          </div>
+
+          <div class= "card">
+            <div class= "card-heading">
+              <i class= "fas fa-desktop"></i>
+              <span>DB</span>
+            </div>
+            <p class= "card-text">直近ではMySQLを使用しました。</p>
+            <div>
+              <p class= "card-title card-body">学習した技術</p>
+              <p class= "card-body">MySQL</p>
+            </div>
+          </div>
+
+          <div class= "card">
+            <div class= "card-heading">
+              <i class= "fas fa-desktop"></i>
+              <span>インフラ・サーバー</span>
+            </div>
+            <p class= "card-text">awsを主に使用してます。</p>
+            <div>
+              <p class= "card-title card-body">学習した技術</p>
+              <p class= "card-body">aws(EC2等)</p>
+            </div>
+          </div>
+
+          <div class= "card">
+            <div class= "card-heading">
+              <i class= "fas fa-desktop"></i>
+              <span>その他</span>
+            </div>
+            <p class= "card-text">使用したツール等です。</p>
+            <div>
+              <p class= "card-title card-body">学習した技術</p>
+              <p class= "card-body">git</p>
+              <p class= "card-body">slack</p>
+            </div>
+          </div>
+
+          <div class= "card">
+            <div class= "card-heading">
+              <i class= "fas fa-desktop"></i>
+              <span>学習中の技術</span>
+            </div>
+            <p class= "card-text">TECH::EXPERT卒業後、自己学習に勤めている内容です。</p>
+            <div>
+              <p class= "card-title card-body">学習中の技術</p>
+              <p class= "card-body">java</p>
+              <p class= "card-body">php</p>
+              <p class= "card-body">Laravel</p>
             </div>
           </div>
         </div>
       </div>
 
-    </div>
+      <div class= "container" id= "works">
+        <div class= "content-title" style="padding-top: 32px;">
+          <i class="fas fa-list-ul"></i>
+          WORKS
+        </div>
+        <div class= "works-card-wrap">
+          <div class= "works-card">
+            <img src= "img/portfolio-index.png" class= "works-img">
+            <p class= "works-title">ポートフォリオ</p>
+            <p class= "works-text">私のポートフォリオです。</p>
+            <a href="https://github.com/shinomaru0315/portfolio" class= "page-link">git hub</a>
+          </div>
+          <div class= "works-card">
+            <img src= "img/Fmarket-index.png" class= "works-img">
+            <p class= "works-title">Fmarket</p>
+            <p class= "works-text">某フリマアプリのクローンサイトです。</p>
+            <p class= "works-text">３人でアジャイル開発にて開発しました。</p>
+            <p class= "works-text">投稿から購入までの一通りの機能を実装しております。</p>
+            <a href="https://github.com/shinomaru0315/freemarket_sample_66a" class= "page-link">git hub</a>
+          </div>
+          <div class= "works-card">
+            <img src= "img/chat-space.png" class= "works-img">
+            <p class= "works-title">chat-space</p>
+            <p class= "works-text">簡単なチャットを送りあえるチャットアプリです。</p>
+            <a href="https://github.com/shinomaru0315/chat-space" class= "page-link">git hub</a>
+          </div>
+        </div>
+      </div>
 
-
-  </body>
-  <footer>
-    <div class= "footer-nav">
-      <ul class= "footer-lists">
-        <li class= "footer-list">
-          <a class= "nav-title nav-profile">PROFILE</a>
-        </li>
-        <li class= "footer-list">
-          <a class= "nav-title nav-skill">SKILL</a>
-        </li>
-        <li class= "footer-list">
-          <a class= "nav-title nav-works">WORKS</a>
-        </li>
-        <li class= "footer-list">
-          <a class= "nav-title nav-contact">CONTACT</a>
-        </li>
-      </ul>
-      <div class= "copyright">
-        Copyright©Kazuma Eto.
+      <div class= "container" id= "contact">
+        <div class= "content-title" style="padding-top: 32px;">
+          <i class="fas fa-envelope"></i>
+          CONTACT
+        </div>
+        <span>何かございましたら下記のメールアドレスまでご連絡ください。</span>
+        <div class= "mail-box">
+          <p class= "mail">frb_shinomaru@yahoo.co.jp</p>
+        </div>
       </div>
     </div>
-  </footer>
+    <footer>
+      <div class= "footer-nav">
+        <ul class= "footer-lists">
+          <li class= "footer-list">
+            <a href= "#profile" class= "nav-title nav-profile">PROFILE</a>
+          </li>
+          <li class= "footer-list">
+            <a href= "#skill" class= "nav-title nav-skill">SKILL</a>
+          </li>
+          <li class= "footer-list">
+            <a href= "#works" class= "nav-title nav-works">WORKS</a>
+          </li>
+          <li class= "footer-list">
+            <a href= "#contact" class= "nav-title nav-contact">CONTACT</a>
+          </li>
+        </ul>
+        <div class= "copyright">
+          Copyright©Kazuma Eto.
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type='text/javascript' src="./js/index.js"></script>
+    
+  </body>
+
+
